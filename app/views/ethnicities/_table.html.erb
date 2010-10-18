@@ -1,0 +1,15 @@
+<table class="data sortable">
+  <thead>
+    <tr>
+      <th><%=t('Name')%></th>
+    </tr>
+  </thead>
+  <tbody>
+  <% ethnicities.each do |ethnicity| %>
+    <tr>
+      <td><%=link_to(h(ethnicity.name),ethnicity_path(ethnicity))%></td>
+    </tr>
+  <%  end %>
+  </tbody>
+  <tfoot></tfoot>
+</table>
